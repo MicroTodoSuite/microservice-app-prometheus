@@ -1,0 +1,24 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "auth-api"
+    static_configs:
+      - targets: ["${AUTH_API_TARGET}"]
+
+  - job_name: "users-api"
+    metrics_path: /prometheus
+    static_configs:
+      - targets: ["${USERS_API_TARGET}"]
+
+  - job_name: "todos-api"
+    static_configs:
+      - targets: ["${TODOS_API_TARGET}"]
+
+  - job_name: "log-message-processor"
+    static_configs:
+      - targets: ["${LOG_PROCESSOR_TARGET}"]
+
+  - job_name: "frontend-nginx"
+    static_configs:
+      - targets: ["${FRONTEND_EXPORTER_TARGET}"]
