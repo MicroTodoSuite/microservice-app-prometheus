@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/MicroTodoSuite/microservice-app-prometheus/compare/v1.0.0...v1.1.0) (2025-04-25)
+
+
+### Features
+
+* **pipeline:** add update of pipeline ([1197e79](https://github.com/MicroTodoSuite/microservice-app-prometheus/commit/1197e7997e004fa81435c45d3e989bd033ffd5df))
+
 # 1.0.0 (2025-04-25)
 
 
