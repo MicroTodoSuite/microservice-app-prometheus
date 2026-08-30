@@ -1,3 +1,8 @@
+> **2026-08-30:** the Azure Container Apps deployment pipeline was removed. This
+> repository builds the custom Prometheus image; where that image is deployed is
+> owned by `microservice-app-gitops` and ArgoCD. Statements below that describe an
+> Azure Container Apps deployment path are historical.
+
 ## Overview
 This repository builds a custom Prometheus container that renders its scrape configuration from environment variables at startup.
 It collects metrics from the suite's authentication, users, todos, log-processing, and frontend-exporter services.
